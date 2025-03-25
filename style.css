@@ -328,3 +328,103 @@ footer {
     color: #999;
     font-size: 14px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .collection-content {
+        padding: 0 20px;
+    }
+
+    .collection-info {
+        padding-top: 60px;
+    }
+
+    .collection-info h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .collection-content {
+        flex-direction: column;
+    }
+
+    .collection-info, 
+    .collection-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .collection-image {
+        margin-top: 40px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    /* Our Story Section */
+    .our-story {
+        flex-direction: column;
+    }
+
+    .story-image,
+    .story-content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .collection-info h1 {
+        font-size: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .add-cart-btn {
+        margin: 10px 0 0 0;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
